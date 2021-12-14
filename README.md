@@ -1,6 +1,6 @@
 # Windows
 
-* Add the [node-hid](https://github.com/node-hid/node-hid#prerequisites) package
+* Add the [node-hid](https://github.com/node-hid/node-hid#prerequisites) package [Issue with old version](https://github.com/node-hid/node-hid/issues/454)
 
 ```
 npm install node-hid
