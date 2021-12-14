@@ -1,12 +1,12 @@
 # Windows
 
-* Add the [node-hid](https://github.com/node-hid/node-hid#prerequisites) package [Issue with old version](https://github.com/node-hid/node-hid/issues/454)
+* Add the [node-hid](https://github.com/node-hid/node-hid#prerequisites) package
 
 ```
 npm install node-hid
 ```
 
-* Add the [xbox-controller-node](https://github.com/mapaiva/xbox-controller-node) package
+* Add the [xbox-controller-node](https://github.com/mapaiva/xbox-controller-node) package  [This package references an obsolete version of node-hid](https://github.com/node-hid/node-hid/issues/454)
 
 ```
 npm install xbox-controller-node
