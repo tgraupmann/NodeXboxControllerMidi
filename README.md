@@ -1,4 +1,20 @@
-# WSL2
+# Windows
+
+* Add the [node-hid](https://github.com/node-hid/node-hid#prerequisites) package
+
+```
+npm install node-hid
+```
+
+* Add the [xbox-controller-node](https://github.com/mapaiva/xbox-controller-node) package
+
+```
+npm install xbox-controller-node
+```
+
+## WSL2
+
+* Note: Unfortunately WSL2 lacks MIDI support...
 
 * Add asoundlib.h
 
