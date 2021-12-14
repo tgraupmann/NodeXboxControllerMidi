@@ -9,7 +9,9 @@
   "author": "Tim Graupmann",
   "license": "MIT",
   "dependencies": {
+    "browser-env": "^3.3.0",
     "easymidi": "^2.1.0",
+    "gamecontroller": "^0.0.2",
     "node-hid": "^2.1.1"
   }
 }

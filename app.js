@@ -1,8 +1,18 @@
-var xbox = require('xbox-controller-node');
+// didn't work with Razer Wolverine - https://github.com/infusion/node-gamecontroller
+var HID = require('node-hid');
+let devices = HID.devices();
+console.log('devices', devices.length);
+for (let index = 0; index < devices.length; ++index) {
+  let device = devices[index];
+  if (device && device.product && device.product.toUpperCase().includes('CONTROLLER')) {
+    console.log(JSON.stringify(device, null, 2));
 
-xbox.on('a', function () {
-  console.log('[A] button press');
-});
+    let hid = new HID.HID(device.vendorId, device.productId);
+    hid.on("data", function (data) {
+      console.log(device.product, data);
+    });
+  }
+}
 
 return;
 
