@@ -9,6 +9,7 @@
   "author": "Tim Graupmann",
   "license": "MIT",
   "dependencies": {
-    "easymidi": "^2.1.0"
+    "easymidi": "^2.1.0",
+    "node-hid": "^2.1.1"
   }
 }
