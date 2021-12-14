@@ -4,7 +4,7 @@ let devices = HID.devices();
 console.log('devices', devices.length);
 for (let index = 0; index < devices.length; ++index) {
   let device = devices[index];
-  if (device && device.product && device.product.toUpperCase().includes('CONTROLLER')) {
+  if (device && device.product && device.product.toUpperCase().includes('XBOX')) {
     console.log(JSON.stringify(device, null, 2));
 
     let hid = new HID.HID(device.vendorId, device.productId);
@@ -13,6 +13,10 @@ for (let index = 0; index < devices.length; ++index) {
     });
   }
 }
+
+var Gamecontroller = require('gamecontroller');
+var dev = Gamecontroller.getDevices();
+console.log('GameControllers:', dev);
 
 return;
 
